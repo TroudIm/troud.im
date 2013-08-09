@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 sdfsfs
 hika
+=======
+hola
+>>>>>>> 8b521df5635a4c2b0b8213d0caf8393c3d1667fd
