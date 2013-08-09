@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<link media="screen" href="css/estilo.css" type="text/css" rel="stylesheet">
+<title>Troud</title>
+</head>
+<body>
+
+<script type="text/javascript">
+		$(document).ready(function(){	
+		
+		
+			var lang=navigator.language.split("-")[0];
+			  switch (lang) {
+                    case ("es"):
+					$(".ca").css("display", "none");
+					$(".en").css("display", "none");
+                    
+						
+						
+                        break;
+                    case ("ca"):
+					$(".es").css("display", "none");
+					$(".en").css("display", "none");
+                     
+                        break;
+                    default:
+					$(".es").css("display", "none");
+					$(".ca").css("display", "none");
+                       
+                }
+			$("."+lang).easySlider({
+				auto: false,
+				continuous: true,
+				numeric: true
+			});
+			
+			
+		});	
+	</script>
+    
+<div class="contenedor">
+
+<div class="logo">
+<h1 class="texto_logo">troud</h1>
+</div>
+
+
+<div id="container_slide">
+ <div id="content">
+  <div id="slider" class="ca">
+
+<ul class="textos_slide">
+
+<li>
+<b>Troud</b> és la fusió de <i>tree</i> (arbre) i <i>cloud</i> (núbol).
+</br>
+L'arbre representa la firmesa (privacitat) i el núbol la llibertat (xarxa).
+</br>
+A la vegada, <b>Troud</b> significa llesca. Un material molt sec, fet normalment de draps secs, cards, o foncs secs, i preparats per a fer foc amb qualsevol petita espurna. I es símbol del concepte polític que representa.
+</a>
+</li>
+
+<li>
+<b> Privacitat:</b> Totes les dades son encriptades en els nostres servidors. Les teves dades, només podran desencriptar-se amb la teva contrasenya. Ningú podrà accedir sense el teu permís. Ni sota ordre judicial.
+</li>
+
+<li>
+<b>Llibertat:</b> Per a nosaltres la llibertat es molt important. T'oferim el codi del nostre software per a que puguis instalar-lo on tu vulguis. Creiem en el software lliure i l'impulsem.
+</li>
+
+</ul>
+
+  </div>
+  
+  
+  <div id="slider" class="es">
+
+<ul class="textos_slide">
+
+<li>
+<b>Troud</b> es la fusión de <i>tree</i> (arbol) y <i>cloud</i> (nube).
+</br>
+El arbol representa la firmeza ( privacidad) y la nube la libertad (red) .
+</br>
+A la vez, <b>Troud</b> significa yesca. Un material muy seco, hecho normalmente de trapos secos, cardos, o hongos secos, y preparados para arder con cualquier chispa. Y es símbolo del concepto político que respresenta
+</a>
+</li>
+
+<li>
+<b> Privacidad:</b> Todos los datos estan encriptados en nuestros servidores. Tus datos, solo podran desencriptarse con tu contraseña. Nadie podrá acceder sin tu permiso. Ni con orden judicial.
+</li>
+
+<li>
+<b>Libertad:</b> Para nosotros la libertad es muy importante. Te ofrecemos el código de nuestro software para que puedas instalarlo donde tu quieras. Crememos y en software libre y lo impulsamos.
+</li>
+
+</ul>
+
+  </div>  
+  <div id="slider" class="en">
+
+
+<ul class="textos_slide">
+
+<li>
+EN<b>Troud</b> és la fusió de <i>tree</i> (arbre) i <i>cloud</i> (núbol).
+</br>
+L'arbre representa la firmesa (privacitat) i el núbol la llibertat (xarxa).
+</br>
+A la vegada, <b>Troud</b> significa llesca. Un material molt sec, fet normalment de draps secs, cards, o foncs secs, i preparats per a fer foc amb qualsevol petita espurna. I es símbol del concepte polític que representa.
+</a>
+</li>
+
+<li>
+<b> Privacitat:</b> Totes les dades son encriptades en els nostres servidors. Les teves dades, només podran desencriptar-se amb la teva contrasenya. Ningú podrà accedir sense el teu permís. Ni sota ordre judicial.
+</li>
+
+<li>
+<b>Llibertat:</b> Per a nosaltres la llibertat es molt important. T'oferim el codi del nostre software per a que puguis instalar-lo on tu vulguis. Creiem en el software lliure i l'impulsem.
+</li>
+
+</ul>
+
+  </div>
+  
+  
+  
+  
+  
+ </div>
+</div>
+
+</div>
+
+</body>
+</html>
