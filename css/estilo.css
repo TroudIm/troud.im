@@ -1,0 +1,176 @@
+/*Fuente*/
+
+@font-face {font-family: 'Museo-300';src: url('webfonts/27810A_0_0.eot');src: url('webfonts/27810A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/27810A_0_0.woff') format('woff'),url('webfonts/27810A_0_0.ttf') format('truetype');}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+/*=== Setup ===*/
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body {
+	background: url(img/bg.jpg) #FFFFFF repeat-x top;
+	color: #5B5D76;
+	font-family: Museo-300;
+	font-size: 0.9em;
+}
+a {
+	color: #33707e;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+h2 {
+	color: #222222;
+	font-size: 1.5em;
+	font-weight: normal;
+	letter-spacing: -1px;
+	margin: 0 0 1em;
+}
+h3 {
+	color: #333333;
+	font-size: 1.2em;
+	margin: 0 0 .8em;
+}
+h4 {
+	font-size: 1em;
+	margin: 0 0 1em;
+}
+p {
+	line-height: 1.5em;
+	padding: 0 0 1.3em;
+}
+
+
+/*=== Layout ===*/
+
+.contenedor {
+	margin: 0 auto;
+    padding-top: 50px;
+    width: 1030px;
+}
+.logo {
+	background: url("img/logo.jpg") no-repeat scroll center top transparent;
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+	}
+.texto_logo {
+	color: #5B5D76;
+    display: block;
+    font-family: Museo-300;
+    font-size: 98px;
+    font-weight: lighter;
+    padding-top: 140px;
+    text-align: center;
+    width: 100%;
+	}
+/*=== Misc. ===*/
+.fix {
+	clear: both;
+	height: 1px;
+	margin: -1px 0 0;
+	overflow: hidden;
+}
+
+/*=== Easy Slider ===*/
+
+#container_slide {
+	margin: 0 auto;
+    padding-top: 50px;
+    width: 855px;
+	}
+.textos_slide {
+	color: #5B5D76;
+	font-family: Museo-300;
+	font-size: 16px;
+	}
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:855px;
+		height:auto;
+		overflow:hidden; 
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:855px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:url(../images/btn_prev.gif) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(../images/btn_next.gif) no-repeat 0 0;	
+		}	
+		
+	/* numeric controls */	
+
+	ol#controls{
+		height: 18px;
+		margin: 5px 0;
+		padding: 0;	
+		}
+	ol#controls li{
+		float: left;
+    height: 18px;
+    line-height: 18px;
+    list-style: none outside none;
+    margin: 0 5px 0 0;
+    padding: 0;
+		}
+	ol#controls li a{
+		background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #5B5D76;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    text-decoration: none;
+		}
+	ol#controls li.current a{
+		background: none repeat scroll 0 0 #5B5D76;
+		color: #FFFFFF;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
